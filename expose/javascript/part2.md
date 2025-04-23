@@ -86,3 +86,16 @@
     `300 * (1 - 0.5) = 150`
 
     Each value is calculated using `const discountedPrice`, which is scoped to one loop iteration using `let i`.
+
+
+12. A. `student.name`
+
+    B. `student["Grad Year"]1`
+
+    C. `student.greeting()`
+
+    D. `student["Favorite Teacher"].name`
+
+    E. `student.courseLoad[0]`
+
+13. 
