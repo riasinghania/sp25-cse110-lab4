@@ -156,6 +156,38 @@
 
 15.  `==` Is loose equality and compares values and allows type conversion. `===` Is strict equality and compares both value and type, with no conversion.
 
+16. Separate file
+
+17. `[2, 4, 6]`
+
+    How I got to the result:
+
+    1. `modifyArray` takes in:
+
+         An array: `[1, 2, 3]`
+
+         A callback function: `doSomething`, which doubles a number `(num * 2)`
+
+    2. Inside the function:
+
+         It creates an empty array: `newArr = []`
+
+         It loops through `[1, 2, 3]`, and for each element:
+
+         Calls `callback(array[i]) → doSomething(array[i])`
+
+          Pushes the result into `newArr`
+
+    3. Iteration:
+
+         `doSomething(1) → 2`
+
+         `doSomething(2) → 4`
+
+         `doSomething(3) → 6`
+
+    4. `newArr` becomes: `[2, 4, 6]`
+
 
    
     
