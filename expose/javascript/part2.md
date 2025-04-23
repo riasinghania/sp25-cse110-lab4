@@ -128,6 +128,35 @@
     
     H. `Nan`
 
-14. 
+    The - operator tries to convert both operands to numbers. '3' becomes 3, but undefined becomes NaN, so 3 -          NaN = NaN.
+
+14. A. `true`
+
+      JavaScript converts '2' to number 2, then compares: 2 > 1 → true.
    
-    The - operator tries to convert both operands to numbers. '3' becomes 3, but undefined becomes NaN, so 3 - NaN = NaN.
+    B. `false`
+
+       Both are strings, so it's a lexicographic (alphabet) comparison: '2' comes after '1', so it’s false.
+
+    C. `true`
+
+       == does type coercion, so '2' is converted to number 2, and 2 == 2 → true.
+
+    D. `false`
+
+       === checks both value and type — number 2 is not the same type as string '2'.
+
+    E. `false`
+
+    Ttrue becomes 1, so 1 == 2 → false.
+
+    F. `true`
+
+       Boolean(2) is true because 2 is truthy. So it becomes true === true → true.
+
+15.  `==` Is loose equality and compares values and allows type conversion. `===` Is strict equality and compares both value and type, with no conversion.
+
+
+   
+    
+    
