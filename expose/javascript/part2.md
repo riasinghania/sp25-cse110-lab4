@@ -98,4 +98,18 @@
 
     E. `student.courseLoad[0]`
 
-13. 
+13. A. `32`
+
+    B. `1`
+
+    C. `3`
+
+    D. `'3null'`
+
+    E. `4`
+
+    F. `0`
+
+    G. `'3undefined'`
+
+    H. `Nan`
