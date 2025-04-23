@@ -100,16 +100,34 @@
 
 13. A. `32`
 
+    The + operator with a string triggers string concatenation. The number 2 is converted to a string, so '3' + 2 becomes '3' + '2' → '32'.
+
     B. `1`
+
+    The - operator forces numeric conversion. '3' becomes the number 3, so 3 - 2 = 1.
 
     C. `3`
 
+    Null converts to 0 in numeric context. So this becomes 3 + 0 = 3.
+
     D. `'3null'`
+
+    With the + operator, if either operand is a string, JavaScript performs string concatenation. So this becomes '3' + 'null' → '3null'.
 
     E. `4`
 
+    True converts to 1 in numeric context. So 1 + 3 = 4.
+
     F. `0`
 
+    False converts to 0 and null converts to 0. So 0 + 0 = 0.
+    
     G. `'3undefined'`
 
+    The + operator treats undefined as a string when combined with another string. '3' + 'undefined' → '3undefined'.
+    
     H. `Nan`
+
+14. 
+   
+    The - operator tries to convert both operands to numbers. '3' becomes 3, but undefined becomes NaN, so 3 - NaN = NaN.
